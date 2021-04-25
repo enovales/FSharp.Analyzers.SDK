@@ -1,13 +1,17 @@
 source https://api.nuget.org/v3/index.json
 
-nuget FSharp.Core
-nuget FSharp.Compiler.Service
+# this is the FCS nightly feed, re-enable at your own risk!
+source https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json
+source ./lib
+
+nuget FSharp.Core prerelease
+nuget FSharp.Compiler.Service prerelease
 nuget Argu
 nuget Glob
-nuget Ionide.ProjInfo.ProjectSystem
+nuget Ionide.ProjInfo.ProjectSystem prerelease
 nuget Microsoft.Build.Tasks.Core copy_local: false
 nuget Microsoft.Build.Utilities.Core copy_local: false
-nuget Microsoft.Build copy_local: false
+nuget Microsoft.Build ~> 16.9 copy_local: false
 nuget Microsoft.Build.Locator
 nuget McMaster.NETCore.Plugins
 

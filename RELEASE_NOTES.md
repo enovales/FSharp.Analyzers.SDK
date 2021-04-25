@@ -1,3 +1,8 @@
+### 0.9.0-beta01 - 25.04.2021
+
+* Update FCS version to 40
+* Update Ionide.ProjInfo as well.
+
 ### 0.8.0 - 10.02.2021
 
 * Update FCS version to 39.0.0
